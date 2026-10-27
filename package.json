@@ -1,0 +1,24 @@
+{
+  "name": "semanola.s27",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-firebase.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Letstar12/SEMANOLA.S27.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Letstar12/SEMANOLA.S27/issues"
+  },
+  "homepage": "https://github.com/Letstar12/SEMANOLA.S27#readme",
+  "dependencies": {
+    "firebase": "^13.1.0"
+  }
+}
