@@ -21,15 +21,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Instalar dependências
         run: npm ci
 
-      - name: Executar testes
+      - name: Executar testes com Firebase
         run: npm test
+        env:
+          FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
 
       - name: Build da aplicação
         run: npm run build --if-present
 
       - name: Deploy simulado
-        run: echo "Deploy realizado com sucesso!"
+        run: echo "Deploy simulado concluído com sucesso!"
